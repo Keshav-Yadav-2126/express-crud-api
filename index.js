@@ -4,7 +4,7 @@ const { v4: uuidv4 } = require("uuid");
 
 const { allRoutes } = require("./routes/all-users.js");
 const { deleteRoutes } = require("./routes/delete-user.js");
-const { updateRoutes } = require("./routes/update-user.js"); // ✅ fix
+const { updateRoutes } = require("./routes/update-user.js");
 const { addRoute } = require("./routes/post-user.js");
 
 const app = express();
@@ -23,8 +23,8 @@ app.get("/users", (req, res) => {
 
 app.use("/", allRoutes);
 app.use("/", addRoute);
-app.use("/", deleteRoutes);   // ✅ correct
-app.use("/", updateRoutes);   // ✅ correct
+app.use("/", deleteRoutes);
+app.use("/", updateRoutes);   
 
 app.get("/api/users/:id", (req, res) => {
   const id = req.params.id;
