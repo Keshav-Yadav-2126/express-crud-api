@@ -13,6 +13,17 @@ A simple CRUD (Create, Read, Update, Delete) API built with **Node.js** and **Ex
 
 ---
 
+## 📬 API Endpoints
+
+| Method | Endpoint           | Description                     |
+|--------|--------------------|---------------------------------|
+| GET    | `/api/users`       | Get all users                   |
+| POST   | `/api/users`       | Add a new user                  |
+| GET    | `/api/users/:id`   | Get a specific user by ID       |
+| PUT    | `/api/users/:id`   | Update a user by ID             |
+| DELETE | `/api/users/:id`   | Delete a user by ID             |
+
+
 ## 🛠️ Built With
 
 - [Express.js](https://expressjs.com/) – Web framework for Node.js
